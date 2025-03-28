@@ -3,11 +3,6 @@ import { getTocartdata } from "./shop.js";
 let prodatct = document.querySelector(".prodatcts");
 const request = useFetch();
 request({ url: "todo" }).then((data) => {
-  console.log("API'dan kelgan to‘liq ma'lumot:", data);
-  console.log(
-    "Rasm linklari:",
-    data.map((item) => item.img)
-  );
   getData(data);
 });
 
@@ -37,7 +32,7 @@ function getData(data) {
             <span class="relative z-10"> Купить в один клик</span>
         </button>
        <button id="${value.id}" class="shop">
-      <p class="pppp"><i id="shopp" class="fa-solid fa-bag-shopping fa-shake"></i></p>
+      <span class="pppp"><i id="shopp" class="fa-solid fa-bag-shopping fa-shake"></i></span>
        </button>
     </div>
 </div>
@@ -50,6 +45,9 @@ const shop = document.querySelectorAll(".shop");
 shop.forEach((value) => {
   value.addEventListener("click", (e) => {
     let findData = data.find((value) => value.id === e.target.id);
-    getTocartdata(findData);
+    console.log(data);
+    
+    
+    getTocartdata(data);
   });
 });
