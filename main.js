@@ -42,7 +42,6 @@ function getData(data) {
     `;
   });
 
-  // Tugmalarga event qo'shamiz
   addShopEventListeners();
 }
 
