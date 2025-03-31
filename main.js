@@ -7,7 +7,7 @@ let globalData = []; // Global o'zgaruvchi
 
 // Ma'lumotlarni yuklash
 request({ url: "todo" }).then((data) => {
-  globalData = data; // Global o'zgaruvchiga saqlaymiz
+  globalData = data;
   getData(data);
 });
 
@@ -31,12 +31,14 @@ function getData(data) {
         <p class="moth">${value.moth}</p>
         <p class="pop">320 800 сум x 12 мес</p>
         <div class="flex items-center justify-between">
+        <div class="buttonmw">
             <button class="bg-[#6666ff] mt-[15px] text-white text-[13px] border-2 border-blue-500 bg-vivid-blue p-[10px_20px] rounded-xl relative overflow-hidden transition-all duration-500 before:absolute before:top-0 before:right-full before:w-full before:h-full before:bg-[blue] before:transition-all before:duration-200 hover:before:right-0">
                 <span class="relative z-10"> Купить в один клик</span>
             </button>
+        </div><div>
             <button id="${value.id}" class="shop">
                 <span class="pppp"><i class="fa-solid fa-bag-shopping fa-shake"></i></span>
-            </button>
+            </button></div>
         </div>
      </div>
     `;
@@ -54,9 +56,9 @@ function addShopEventListeners() {
 
       if (findData) {
         getTocartdata(findData);
-        console.log("Mahsulot savatchaga qo‘shildi:", findData);
+        console.log(findData);
       } else {
-        console.error("Mahsulot topilmadi!", productId);
+        console.error(productId);
       }
     });
   });
