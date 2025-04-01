@@ -3,9 +3,8 @@ import { getTocartdata } from "./shop.js";
 
 let prodatct = document.querySelector(".prodatcts");
 const request = useFetch();
-let globalData = []; // Global o'zgaruvchi
+let globalData = []; 
 
-// Ma'lumotlarni yuklash
 request({ url: "todo" }).then((data) => {
   globalData = data;
   getData(data);
@@ -63,3 +62,5 @@ function addShopEventListeners() {
     });
   });
 }
+
+
