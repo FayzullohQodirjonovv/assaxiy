@@ -88,30 +88,30 @@
   cursor: pointer;
   border-radius: 50%;
 }
-.header{
+.header {
   position: sticky;
   top: 0;
   z-index: 1111;
 }
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.buttonmw{
+.buttonmw {
   background-color: blue;
   padding: 7px 20px;
   border-radius: 12px;
   margin-top: 10px;
 }
-.buttonmw:hover{
+.buttonmw:hover {
   background-color: darkblue;
   transition: 0.4s;
 }
-.salom{
+.salom {
   background-color: red;
   padding: 10px;
 }
-#salom{
+#salom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,44 +119,44 @@
   margin-top: -10px;
   margin-left: 10px;
 }
-.sayhello{
+.sayhello {
   display: flex;
   justify-content: space-between;
 }
-.paragrp{
+.paragrp {
   color: grey;
 }
-.moth{
+.moth {
   color: #006bff;
-font-weight: 700;
-font-size: 24px;
-line-height: 24px;
-letter-spacing: 0%;
-margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-top: 20px;
 }
-.pop{
+.pop {
   color: orange;
-  border:  1px solid orange;
-  padding:4px 4px;
+  border: 1px solid orange;
+  padding: 4px 4px;
   border-radius: 4px;
   margin-top: 10px;
 }
-.pop:hover{
+.pop:hover {
   background-color: orange;
   color: white;
   transition: 0.4s;
   margin-top: 5px;
 }
-.buttone{
+.buttone {
   background-color: red;
 }
 
-.h3{
+.h3 {
   color: black;
-font-weight: 500;
-font-size: 18px;
-line-height: 20px;
-margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 .img {
   width: 100%;
@@ -268,8 +268,24 @@ margin-bottom: 10px;
   vertical-align: middle;
   color: #64748b;
 }
-.jokol i{
+.jossa{
+
+}
+.jops{
+  position: sticky;
+  top: 0;
+  width: 900px;
+}
+.jokol i {
   margin-right: 10px;
+}
+.fifty {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 .navbar {
   display: grid;
@@ -278,40 +294,47 @@ margin-bottom: 10px;
 .loft {
   text-align: center;
 }
-.pppp{
+.pppp {
   padding: 7px 15px;
   border-radius: 8px;
   margin-top: 13px;
 }
-.pppp button{
-border: 2px solid #006bff;
-border-radius: 50%;
+.colorsss {
+  margin-top: -130px;
+  margin-right: 10px;
+}
+.red {
+  background-color: red;
+}
+.pppp button {
+  border: 2px solid #006bff;
+  border-radius: 50%;
   padding: 5px 12px;
 }
-.pppp button:hover{
+.pppp button:hover {
   border: 2px solid red;
   transition: 0.4s;
   border-radius: 50%;
-    padding: 5px 12px;
-  }
-.kokomn{
+  padding: 5px 12px;
+}
+.kokomn {
   margin-top: 50px;
 }
-.joko{
-  border:3px solid blue;
+.joko {
+  border: 3px solid blue;
   margin-bottom: 50px !important;
 }
-.prodact{
+.prodact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width:900px !important;
+  width: 900px !important;
   gap: 40px;
 }
-.prodact img{
+.prodact img {
   width: 200px;
 }
-@media (max-width:1000px){
+@media (max-width: 1000px) {
   .prodatcts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -320,32 +343,33 @@ border-radius: 50%;
     gap: 50px;
     margin-top: 100px;
   }
-  
+
   .varok__boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .koko__imlor{
+  .koko__imlor {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }
-  .navbar{
+  .navbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  .card1{
+  .card1 {
     display: none;
   }
 
-  .just{
+  .just {
     display: none;
   }
-  .rolex{
+  .rolex {
     display: none;
   }
-}@media (max-width:800px){
+}
+@media (max-width: 800px) {
   .prodatcts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -359,9 +383,8 @@ border-radius: 50%;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
   }
-
 }
-@media (max-width:600px){
+@media (max-width: 600px) {
   .prodatcts {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -370,7 +393,7 @@ border-radius: 50%;
     gap: 50px;
     margin-top: 100px;
   }
-  .rolex{
+  .rolex {
     display: none;
   }
   .varok__boxes {

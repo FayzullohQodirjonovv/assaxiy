@@ -36,8 +36,10 @@ function getData(data) {
             </button>
         </div><div>
             <button id="${value.id}" class="shop">
-                <span class="pppp"><i class="fa-solid fa-bag-shopping fa-shake"></i></span>
-            </button></div>
+                <span class="pppp"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+                </span>
+            </button>
+            </div>
         </div>
      </div>
     `;
