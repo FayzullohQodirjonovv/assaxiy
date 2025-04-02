@@ -1,9 +1,17 @@
 import { useFetch } from "./request.js";
 import { getTocartdata } from "./shop.js";
-
+let load = document.querySelector(".loader");
 let prodatct = document.querySelector(".prodatcts");
 const request = useFetch();
-let globalData = []; 
+let isloading = false;
+const getDataasync = async () => {
+  isloading = true;
+  const response = await request({ url: "todo" });
+  isloading = false;
+  loadingUi(response);
+  return load;
+};
+let globalData = [];
 
 request({ url: "todo" }).then((data) => {
   globalData = data;
@@ -64,5 +72,3 @@ function addShopEventListeners() {
     });
   });
 }
-
-

@@ -669,10 +669,6 @@ video {
   height: 170px;
 }
 
-.h-\[25px\] {
-  height: 25px;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
@@ -692,10 +688,6 @@ video {
 
 .w-\[250px\] {
   width: 250px;
-}
-
-.w-\[25px\] {
-  width: 25px;
 }
 
 .w-full {
@@ -772,10 +764,6 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -801,11 +789,6 @@ video {
 
 .bg-\[\#ffff\] {
   background-color: #ffff;
-}
-
-.bg-\[red\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-blue-500 {
@@ -1261,7 +1244,63 @@ video {
   color: #64748b;
 }
 
-.jossa{
+.loader {
+  width: 100px;
+  height: 100px;
+  border-width: 3px;
+  border-style: dashed solid  solid dotted;
+  border-color: #FF3D00 #FF3D00 transparent #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.angular{
+  font-size: 20px;
+}
+
+.angular:hover{
+  color: red;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.awasomed{
+  margin-top: -150px;
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.awasomed i:nth-child(2){
+  font-size: 20px;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #FF3D00;
+  transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .jops{

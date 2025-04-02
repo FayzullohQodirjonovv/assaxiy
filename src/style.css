@@ -268,9 +268,60 @@
   vertical-align: middle;
   color: #64748b;
 }
-.jossa{
-
+.loader {
+  width: 100px;
+  height: 100px;
+  border-width: 3px;
+  border-style: dashed solid  solid dotted;
+  border-color: #FF3D00 #FF3D00 transparent #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.angular{
+  font-size: 20px;
+}
+.angular:hover{
+  color: red;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.awasomed{
+  margin-top: -150px;
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+.awasomed i:nth-child(2){
+  font-size: 20px;
+}
+
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #FF3D00;
+  transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
 .jops{
   position: sticky;
   top: 0;
