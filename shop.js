@@ -121,7 +121,7 @@ function subtotol() {
         total.textContent = `0 som`;
         fulltotal.textContent = `50,000 som`;
     }
+    subtotol();
 }
 
-subtotol();
 renderui()
